@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap');
+
+.consumer-login-container {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(120deg, #e0ffe4 0%, #c3f0ff 100%),
+    url('https://lh5.googleusercontent.com/7Q8E6kltrcDPY_1iM2XUXGb867u7Lo9c9d9fHeDbDGk9NfRdqypRF3wWVHKV0kRY83BfYYRRqsKVa2e6SF45X3JprjUXgErscPwzDFlP2HVMdHsK43Qk11y8_zhssucOZ5jmwHig=s0') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', 'Segoe UI', sans-serif;
+  overflow: auto;
+}
+
+.consumer-form-glass {
+  backdrop-filter: blur(18px) saturate(120%);
+  -webkit-backdrop-filter: blur(18px) saturate(120%);
+  background: rgba(255, 255, 255, 0.44);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px 0 rgba(44, 62, 80, 0.18), 0 2px 8px rgba(44, 62, 80, 0.10);
+  padding: 48px 32px 32px 32px;
+  max-width: 380px;
+  width: 96%;
+  text-align: center;
+  color: #263238;
+  border: 1.5px solid rgba(60, 180, 75, 0.10);
+  margin: 24px 0;
+  animation: fadeIn 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.consumer-logo {
+  width: 68px;
+  height: 68px;
+  margin-bottom: 12px;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(60, 180, 75, 0.16);
+  background: #fff;
+  object-fit: cover;
+  border: 2px solid #43e97b;
+}
+
+.consumer-form-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  letter-spacing: 1.2px;
+  color: #2d6a4f;
+  text-shadow: 0 2px 8px rgba(67, 233, 123, 0.09);
+}
+
+.consumer-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.consumer-login-input {
+  padding: 10px 12px;
+  border: 1.5px solid #b2f2bb;
+  border-radius: 7px;
+  font-size: 1rem;
+  background: rgba(255,255,255,0.7);
+  transition: border 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.consumer-login-input:focus {
+  border: 1.5px solid #2d6a4f;
+  box-shadow: 0 0 0 2px #b7e4c7;
+}
+
+.consumer-login-button {
+  padding: 12px 0;
+  background: linear-gradient(90deg, #396afc 0%, #2948ff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s, color 0.2s, transform 0.15s;
+  box-shadow: 0 2px 8px rgba(67, 233, 123, 0.12);
+}
+
+.consumer-login-button:hover,
+.consumer-login-button:focus {
+  background: linear-gradient(90deg, #005bea 0%, #3a7bd5 100%);
+  color: #ffd60a;
+  transform: translateY(-2px) scale(1.04);
+  outline: 3px solid #ffd60a;
+}
+
+.consumer-login-toggle-text {
+  margin-top: 10px;
+  color: #2d6a4f;
+  font-size: 1rem;
+}
+
+.consumer-login-toggle {
+  background: none;
+  border: none;
+  color: #388e3c;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 8px;
+  font-size: 1rem;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.consumer-login-toggle:hover,
+.consumer-login-toggle:focus {
+  color: #ffd60a;
+  outline: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .consumer-form-glass {
+    padding: 24px 8px 18px 8px;
+    max-width: 99vw;
+  }
+  .consumer-form-title {
+    font-size: 1.3rem;
+  }
+  .consumer-logo {
+    width: 40px;
+    height: 40px;
+  }
+  .consumer-login-toggle-text,
+  .consumer-login-toggle {
+    font-size: 0.96rem;
+  }
+}

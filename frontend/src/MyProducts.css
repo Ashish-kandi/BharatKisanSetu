@@ -1,0 +1,5 @@
+.myproducts-container { max-width: 600px; margin: 40px auto; }
+.product-form { display: flex; gap: 8px; margin-bottom: 20px; }
+.product-form input { flex: 1; padding: 6px; }
+.products-list { margin-top: 20px; }
+.product-card { background: #e0ffe4; padding: 10px 18px; border-radius: 8px; margin-bottom: 10px; }

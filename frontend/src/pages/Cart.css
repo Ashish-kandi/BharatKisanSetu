@@ -1,0 +1,211 @@
+.cart-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(44,62,80,0.13);
+  padding: 32px 20px;
+  min-height: 60vh;
+}
+.cart-list {
+  margin-bottom: 24px;
+}
+.cart-item-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(44,62,80,0.08);
+  padding: 18px;
+  margin-bottom: 16px;
+  transition: box-shadow 0.2s;
+}
+.cart-item-card:hover {
+  box-shadow: 0 4px 24px rgba(44,62,80,0.16);
+}
+.cart-thumb {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 16px;
+}
+.cart-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.cart-qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+}
+.qty-btn {
+  background: #e9ecef;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 18px;
+  margin: 0 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.qty-btn.plus { background: #d4edda; }
+.qty-btn.minus { background: #f8d7da; }
+.qty-btn:hover { background: #ffd60a; }
+.qty {
+  font-size: 1.1rem;
+  min-width: 22px;
+  text-align: center;
+}
+.remove-btn {
+  background: #f44336;
+  color: #fff;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 6px;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+.remove-btn:hover { background: #b71c1c; }
+.cart-item-total {
+  font-weight: 600;
+  font-size: 1.1rem;
+  min-width: 90px;
+  text-align: right;
+}
+.cart-summary {
+  text-align: right;
+  margin-top: 18px;
+}
+.cart-total-amount {
+  color: #2d6a4f;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.checkout-btn {
+  background: #ffd60a;
+  color: #2d6a4f;
+  border: none;
+  padding: 10px 26px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-right: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.checkout-btn:hover {
+  background: #ffe066;
+}
+.clear-btn {
+  background: #eee;
+  color: #333;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.clear-btn:hover {
+  background: #ddd;
+}
+.empty-cart {
+  text-align: center;
+  padding: 40px 0;
+}
+.empty-cart-img {
+  width: 90px;
+  opacity: 0.7;
+  margin-bottom: 18px;
+}
+.shop-btn {
+  background: #2d6a4f;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 18px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.shop-btn:hover {
+  background: #40916c;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: #fff;
+  border-radius: 10px;
+  padding: 32px 24px;
+  box-shadow: 0 4px 24px rgba(44,62,80,0.18);
+  min-width: 340px;
+  max-width: 95vw;
+  text-align: center;
+}
+.order-success {
+  background: #e5ffe5;
+  border: 1px solid #b7e4c7;
+  color: #2d6a4f;
+  margin: 24px auto;
+  padding: 24px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+}
+.order-stepper {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0;
+}
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+.circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #eee;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+.step.active .circle {
+  background: #2d6a4f;
+  color: #fff;
+  border: 2px solid #ffd60a;
+}
+.step span {
+  font-size: 0.95rem;
+  color: #888;
+}
+.step.active span {
+  color: #2d6a4f;
+  font-weight: 600;
+}

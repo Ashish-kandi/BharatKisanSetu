@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Ashish",
+    "phone": "8121285818",
+    "address": "Vizianagaram",
+    "password": "1234"
+  },
+  {
+    "name": "Rahul",
+    "phone": "8375585818",
+    "address": "vizag",
+    "password": "1111"
+  },
+  {
+    "name": "Prashant",
+    "phone": "9949092658",
+    "address": "vizag",
+    "password": "1234"
+  },
+  {
+    "name": "Ravi",
+    "phone": "6303267312",
+    "address": "vizianagaram",
+    "password": "1212"
+  },
+  {
+    "name": "Dinesh",
+    "phone": "8374485818",
+    "address": "vizianagaram",
+    "password": "12345678"
+  }
+]

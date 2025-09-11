@@ -1,0 +1,10 @@
+.messages-container { max-width: 600px; margin: 40px auto; }
+.messages-list { min-height: 200px; background: #f8f9fa; padding: 10px; border-radius: 8px; margin-bottom: 16px; }
+.message-item { margin-bottom: 10px; }
+.message-item.sent { text-align: right; color: #2d6a4f; }
+.message-item.received { text-align: left; color: #388e3c; }
+.message-from { font-weight: bold; }
+.message-text { margin: 2px 0; }
+.message-time { font-size: 0.85em; color: #888; }
+.message-form { display: flex; gap: 8px; }
+.message-form input { flex: 1; padding: 6px; }

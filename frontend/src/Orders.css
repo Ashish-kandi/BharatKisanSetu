@@ -1,0 +1,4 @@
+.orders-container { max-width: 700px; margin: 40px auto; }
+.orders-table { width: 100%; border-collapse: collapse; }
+.orders-table th, .orders-table td { border: 1px solid #b2f2bb; padding: 8px; text-align: center; }
+.orders-table th { background: #e0ffe4; }

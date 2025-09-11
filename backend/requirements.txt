@@ -1,0 +1,6 @@
+flask
+flask-cors
+numpy
+dimod
+dwave-neal
+waitress
